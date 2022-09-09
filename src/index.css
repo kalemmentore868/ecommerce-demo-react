@@ -1,13 +1,58 @@
-body {
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-size: 1.3rem;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  text-align: center;
+}
+
+h1 {
+  margin: 20px 0;
+}
+
+.checkout {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 60%;
+  margin: 40px auto;
+}
+.checkout > div {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 15px;
+}
+
+button {
+  cursor: pointer;
+}
+
+#calculate {
+  margin-bottom: 20px;
+}
+
+.result {
+  margin-bottom: 20px;
+}
+
+.modal {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(80, 76, 76, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 10px;
+  width: 30%;
+  position: relative;
+  z-index: 2;
 }
